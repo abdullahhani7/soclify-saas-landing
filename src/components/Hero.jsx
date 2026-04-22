@@ -10,11 +10,11 @@ import {
 
 const Hero = () => {
   const partners = [
-    { name: "Logoipsum", icon: <Globe className="w-9 h-9" /> },
-    { name: "Learnify", icon: <Compass className="w-9 h-9" /> },
-    { name: "Saydraw", icon: <Layers className="w-9 h-9" /> },
-    { name: "Shopfun", icon: <Cpu className="w-9 h-9" /> },
-    { name: "OneTech", icon: <FingerprintPattern className="w-9 h-9" /> },
+    { name: "Logoipsum", icon: <Globe className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
+    { name: "Learnify", icon: <Compass className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
+    { name: "Saydraw", icon: <Layers className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
+    { name: "Shopfun", icon: <Cpu className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
+    { name: "OneTech", icon: <FingerprintPattern className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
   ];
 
   return (
@@ -60,7 +60,7 @@ const Hero = () => {
 
       <div className="relative z-10 w-full py-12    ">
         <div className="container mx-auto px-6">
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-20 lg:gap-32 opacity-30">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-7 lg:gap-20 xl:gap-32 opacity-30">
             {partners.map((partner, index) => (
               <div
                 key={index}
@@ -69,7 +69,7 @@ const Hero = () => {
                 <div className="text-white   transition-colors">
                   {partner.icon}
                 </div>
-                <span className="text-2xl   tracking-tight text-white">
+                <span className="text-lg md:text-xl  lg:text-xl  xl:text-2xl tracking-tight text-white">
                   {partner.name}
                 </span>
               </div>
