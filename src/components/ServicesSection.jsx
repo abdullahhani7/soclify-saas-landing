@@ -41,18 +41,18 @@ export default function ServicesSection() {
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
           <div className="space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-gradient-to-r from-[#272626] via-white/30 to-[#272626] border border-white/10 text-xs text-white">
               <ShieldCheck size={14} />
               <span>Our Services</span>
             </div>
-            <h2 className="text-4xl md:text-5xl   leading-tight">
+            <h2 className="text-4xl md:text-5xl font-semibold  leading-tight">
               Comprehensive Security <br />
               <span className="text-gray-300">
                 Solutions for the Digital Age
               </span>
             </h2>
           </div>
-          <p className="text-gray-300 max-w-sm text-sm leading-relaxed">
+          <p className="text-gray-300   max-w-sm text-sm leading-relaxed">
             Protecting your data, infrastructure, and reputation with end-to-end
             cybersecurity.
           </p>
