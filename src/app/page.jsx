@@ -1,8 +1,10 @@
+import FAQSection from "@/components/FAQSection";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PricingSection from "@/components/PricingSection";
 import SecuritySection from "@/components/SecuritySection";
 import ServicesSection from "@/components/ServicesSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,6 +15,8 @@ export default function Home() {
       <SecuritySection />
       <ServicesSection />
       <PricingSection />
+      <FAQSection />
+      <TestimonialsSection/>
     </div>
   );
 }
