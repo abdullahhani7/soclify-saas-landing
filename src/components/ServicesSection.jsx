@@ -39,7 +39,7 @@ export default function ServicesSection() {
     <section className="bg-[#161616] text-white py-20 px-6 md:px-12 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+        <div className="flex flex-col  md:flex-row justify-between text-center md:text-start items-center  md:items-end mb-16 gap-6">
           <div className="space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-gradient-to-r from-[#272626] via-white/30 to-[#272626] border border-white/10 text-xs text-white">
               <ShieldCheck size={14} />
