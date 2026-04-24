@@ -5,7 +5,7 @@ import { ChevronDown, ShieldCheck, HelpCircle } from "lucide-react";
 import FAQItem from "./FAQItem";
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState(1);
+  const [openIndex, setOpenIndex] = useState(-1);
 
   const faqs = [
     {
