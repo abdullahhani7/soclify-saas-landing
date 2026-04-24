@@ -4,7 +4,7 @@ import { ChevronDown, ShieldCheck, HelpCircle } from "lucide-react";
 export default function FAQItem({ faq, isOpen, onClick }) {
   return (
     <motion.div
-      layout  
+      layout
       initial={false}
       className={`rounded-2xl border transition-colors duration-500 ${
         isOpen
@@ -14,10 +14,10 @@ export default function FAQItem({ faq, isOpen, onClick }) {
     >
       <button
         onClick={onClick}
-        className="cursor-pointer w-full px-6 md:p-4 flex items-center justify-between text-left outline-none"
+        className="cursor-pointer w-full p-4 px-4 md:px-6 md:p-4 flex items-center justify-between text-left outline-none"
       >
         <span
-          className={`text-lg font-medium pr-4 transition-colors duration-300 ${isOpen ? "text-white" : "text-white"}`}
+          className={`text-md  md:text-lg font-medium pr-4 transition-colors duration-300 ${isOpen ? "text-white" : "text-white"}`}
         >
           {faq.question}
         </span>
@@ -26,9 +26,9 @@ export default function FAQItem({ faq, isOpen, onClick }) {
             rotate: isOpen ? 180 : 0,
             backgroundColor: isOpen ? "#10b981" : "rgba(255,255,255,0.05)",
           }}
-          className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center border border-white/10 ${isOpen ? "text-black shadow-[0_0_15px_rgba(16,185,129,0.4)]" : "text-gray-500"}`}
+          className={`flex-shrink-0    w-6   h-6  md:w-10  md:h-10 rounded-full flex items-center justify-center border border-white/10 ${isOpen ? "text-black shadow-[0_0_15px_rgba(16,185,129,0.4)]" : "text-gray-500"}`}
         >
-          <ChevronDown size={20} />
+          <ChevronDown className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" />
         </motion.div>
       </button>
 

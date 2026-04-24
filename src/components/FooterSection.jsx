@@ -70,11 +70,11 @@ export default function FooterSection() {
             <div>
               <h4 className="text-white text-lg mb-8">Navigation</h4>
               <ul className="space-y-4">
-                {["Home", "Product", "Pricing", "Company", "Blog"].map(
+                {["Home", "Services", "Pricing", "Company", "Contact"].map(
                   (link) => (
                     <li key={link}>
                       <a
-                        href="#"
+                        href={`#${link.toLowerCase()}`}
                         className="text-gray-300 hover:text-[#10b981] transition-colors"
                       >
                         {link}
@@ -91,12 +91,9 @@ export default function FooterSection() {
               <ul className="space-y-4">
                 {["About Us", "News", "Career", "Our Story"].map((link) => (
                   <li key={link}>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-[#10b981] transition-colors"
-                    >
+                    <button className="cursor-pointer text-gray-300 hover:text-[#10b981] transition-colors">
                       {link}
-                    </a>
+                    </button>
                   </li>
                 ))}
               </ul>
