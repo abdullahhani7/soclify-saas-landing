@@ -104,12 +104,13 @@ export default function FooterSection() {
               <h4 className="text-white  text-lg mb-8">Contact Us</h4>
               <div className="text-gray-300 space-y-4">
                 <p className="leading-relaxed">
-                  123 Maple Street <br />
-                  Apt. 4B <br />
-                  Los Angeles, CA 90001 <br />
-                  United States
+                New Damietta, Damietta, <br />
+                  Egypt <br />
+                  {/* Los Angeles, CA 90001 <br />
+                  United States */}
                 </p>
-                <p className="text-white    pt-2">Phone : (256) 870-8700</p>
+                <p className="text-white   ">Email : 0xl33t@soclify.io</p>
+                <p className="text-white    ">Phone : +20 101 554 8577</p>
               </div>
             </div>
           </div>

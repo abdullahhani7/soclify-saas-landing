@@ -83,7 +83,7 @@ export default function TestimonialsSection() {
           {/* زر السهم الشمال */}
           <button
             onClick={handlePrev}
-            className="absolute left-0 z-20 w-10 h-10 rounded-full border border-white/10 bg-[#0a0a0a]/50 backdrop-blur-sm flex items-center justify-center hover:border-emerald-500/50 hover:text-emerald-500 transition-all"
+            className="absolute left-0 z-20 w-7 h-7 sm:w-10 sm:h-10 rounded-full border border-white/10 bg-[#0a0a0a]/50 backdrop-blur-sm flex items-center justify-center hover:border-emerald-500/50 hover:text-emerald-500 transition-all"
             aria-label="Previous testimonial"
           >
             <ChevronLeft size={20} />
@@ -100,20 +100,20 @@ export default function TestimonialsSection() {
             >
               {/* اللوجو */}
               <div className="flex items-center gap-2">
-                <div className="w-12 h-12 rounded-full bg-[#111] border border-white/10 flex items-center justify-center">
+                <div className="w-10 h-10  sm:w-12  sm:h-12 rounded-full bg-[#111] border border-white/10 flex items-center justify-center">
                   <img
                     src={testimonials[activeIndex].logo}
                     alt="logo"
-                    className="w-8 h-8 opacity-80 rounded-full"
+                    className="w-6 h-6 sm:w-8 sm:h-8 opacity-80 rounded-full"
                   />
                 </div>
-                <span className="text-xl font-medium tracking-tight">
+                <span className="text-lg md:text-xl font-medium tracking-tight">
                   {testimonials[activeIndex].company}
                 </span>
               </div>
 
               {/* نص الرأي */}
-              <p className="text-xl md:text-xl   text-gray-300 leading-relaxed min-h-[120px]">
+              <p className="text-md sm:text-xl   text-gray-300 leading-relaxed min-h-[120px]">
                 {testimonials[activeIndex].content}
               </p>
 
@@ -141,7 +141,7 @@ export default function TestimonialsSection() {
           {/* زر السهم اليمين */}
           <button
             onClick={handleNext}
-            className="absolute right-0 z-20 w-10 h-10 rounded-full border border-white/10 bg-[#0a0a0a]/50 backdrop-blur-sm flex items-center justify-center hover:border-emerald-500/50 hover:text-emerald-500 transition-all"
+            className="absolute right-0 z-20 w-7 h-7 sm:w-10 sm:h-10 rounded-full border border-white/10 bg-[#0a0a0a]/50 backdrop-blur-sm flex items-center justify-center hover:border-emerald-500/50 hover:text-emerald-500 transition-all"
             aria-label="Next testimonial"
           >
             <ChevronRight size={20} />
