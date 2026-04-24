@@ -69,7 +69,7 @@ export default function ServicesSection() {
               </p>
             </div>
             <Image
-              src="/services1.png"
+              src="/service1.png"
               alt="Cloud"
               fill
               className="object-cover object-bottom opacity-80 group-hover:scale-105 transition-transform duration-500"
@@ -86,7 +86,7 @@ export default function ServicesSection() {
               </p>
             </div>
             <Image
-              src="/services2.png"
+              src="/service2.png"
               alt="Testing"
               fill
               className="object-cover object-bottom opacity-80 group-hover:scale-105 transition-transform duration-500"
@@ -104,7 +104,7 @@ export default function ServicesSection() {
               </p>
             </div>
             <Image
-              src="/services3.png"
+              src="/service3.png"
               alt="Threat"
               fill
               className="object-cover object-bottom opacity-80 group-hover:scale-105 transition-transform duration-500"
@@ -121,7 +121,7 @@ export default function ServicesSection() {
               </p>
             </div>
             <Image
-              src="/services4.png"
+              src="/service4.png"
               alt="Firewall"
               fill
               className="object-cover object-bottom opacity-80 group-hover:scale-105 transition-transform duration-500"
@@ -138,7 +138,7 @@ export default function ServicesSection() {
               </p>
             </div>
             <Image
-              src="/services5.jpeg"
+              src="/service5.jpeg"
               alt="Endpoint"
               fill
               className="object-cover object-bottom opacity-80 group-hover:scale-105 transition-transform duration-500"
