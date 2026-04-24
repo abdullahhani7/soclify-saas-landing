@@ -13,7 +13,8 @@ export default function TestimonialsSection() {
         "We were looking for a scalable security partner, and Securely nailed it. Real-time dashboard, instant alerts, and expert support? Game changer.",
       author: "Lamine Yamal",
       role: "Founder of Onetech.inc",
-      avatar: "https://i.pinimg.com/736x/22/5f/4c/225f4c968155fcd81cc89182f673583b.jpg",
+      avatar:
+        "https://i.pinimg.com/736x/22/5f/4c/225f4c968155fcd81cc89182f673583b.jpg",
       logo: "https://api.dicebear.com/7.x/initials/svg?seed=OT",
     },
     {
@@ -22,7 +23,8 @@ export default function TestimonialsSection() {
         "Their incident response team is incredible. We had a minor breach attempt and they neutralized it before it even hit our main database.",
       author: "Alex Rivera",
       role: "CTO at TechFlow",
-      avatar: "https://i.pinimg.com/736x/7a/e0/72/7ae07275b5bcb595ec5da30eb436b639.jpg",
+      avatar:
+        "https://i.pinimg.com/736x/7a/e0/72/7ae07275b5bcb595ec5da30eb436b639.jpg",
       logo: "https://api.dicebear.com/7.x/initials/svg?seed=TF",
     },
     {
@@ -31,7 +33,8 @@ export default function TestimonialsSection() {
         "The most intuitive security platform we've used in years. Integration was seamless and the ROI was immediate for our team.",
       author: "John Chen",
       role: "Head of IT",
-      avatar: "https://i.pinimg.com/webp/1200x/08/6c/75/086c750bbca89ed4561bdad81e39e8c5.webp",
+      avatar:
+        "https://i.pinimg.com/webp/1200x/08/6c/75/086c750bbca89ed4561bdad81e39e8c5.webp",
       logo: "https://api.dicebear.com/7.x/initials/svg?seed=CG",
     },
   ];
@@ -48,21 +51,21 @@ export default function TestimonialsSection() {
 
   return (
     <section className="bg-[#161616] text-white py-24 px-6 md:px-12 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-0">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center    gap-12 lg:gap-0">
         {/* الجزء الشمال: العنوان ثابت */}
-        <div className="lg:w-1/2 space-y-8 z-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-gradient-to-r from-[#272626] via-white/30 to-[#272626] border border-white/10 text-sm text-white mb-6">
-             <ShieldCheck size={14} />
-          <span>Testimonial</span>
-        </div>
+        <div className="lg:w-1/2 space-y-8 z-10 text-center lg:text-start">
+          <div className=" inline-flex items-center gap-2 px-3 py-1 rounded-md bg-gradient-to-r from-[#272626] via-white/30 to-[#272626] border border-white/10 text-sm text-white mb-6">
+            <ShieldCheck size={14} />
+            <span>Testimonial</span>
+          </div>
 
-          <h2 className="text-4xl md:text-5xl font-medium leading-tight">
+          <h2 className="text-4xl md:text-5xl font-medium leading-tight  ">
             Trusted by Global <br />
             Companies. See Their <br />
             <span className="text-gray-300 font-medium">Testimonials</span>
           </h2>
 
-          <p className="text-gray-300 text-md max-w-sm leading-relaxed">
+          <p className="text-gray-300 text-md m-auto lg:m-0 max-w-sm leading-relaxed  text-center lg:text-start">
             From startups to global enterprises, our clients rely on us to
             deliver exceptional results.
           </p>
@@ -97,11 +100,11 @@ export default function TestimonialsSection() {
             >
               {/* اللوجو */}
               <div className="flex items-center gap-2">
-                <div className="w-12 h-12 rounded-xl bg-[#111] border border-white/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-[#111] border border-white/10 flex items-center justify-center">
                   <img
                     src={testimonials[activeIndex].logo}
                     alt="logo"
-                    className="w-7 h-7 opacity-80"
+                    className="w-8 h-8 opacity-80 rounded-full"
                   />
                 </div>
                 <span className="text-xl font-medium tracking-tight">
@@ -111,7 +114,7 @@ export default function TestimonialsSection() {
 
               {/* نص الرأي */}
               <p className="text-xl md:text-xl   text-gray-300 leading-relaxed min-h-[120px]">
-                {testimonials[activeIndex].content} 
+                {testimonials[activeIndex].content}
               </p>
 
               {/* بيانات الشخص */}

@@ -10,11 +10,11 @@ import {
 
 const Hero = () => {
   const partners = [
-    { name: "Logoipsum", icon: <Globe className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
-    { name: "Learnify", icon: <Compass className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
-    { name: "Saydraw", icon: <Layers className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
-    { name: "Shopfun", icon: <Cpu className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
-    { name: "OneTech", icon: <FingerprintPattern className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
+    { name: "Logoipsum", icon: <Globe className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
+    { name: "Learnify", icon: <Compass className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
+    { name: "Saydraw", icon: <Layers className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
+    { name: "Shopfun", icon: <Cpu className="w-4 h-4 md:w-6 sm:w-5 sm:h-5 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
+    { name: "OneTech", icon: <FingerprintPattern className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
   ];
 
   return (
@@ -60,16 +60,16 @@ const Hero = () => {
 
       <div className="relative z-10 w-full py-12    ">
         <div className="container mx-auto px-6">
-          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-7 lg:gap-20 xl:gap-32 opacity-30">
+          <div className="flex flex-nowrap    items-center justify-center gap-2 md:gap-7 lg:gap-20 xl:gap-32 opacity-30">
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 grayscale hover:grayscale-0 transition-all duration-300 group cursor-pointer"
+                className="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300 group cursor-pointer"
               >
                 <div className="text-white   transition-colors">
                   {partner.icon}
                 </div>
-                <span className="text-lg md:text-xl  lg:text-xl  xl:text-2xl tracking-tight text-white">
+                <span className="text-md sm:text-lg md:text-xl  lg:text-xl  xl:text-2xl tracking-tight text-white">
                   {partner.name}
                 </span>
               </div>
