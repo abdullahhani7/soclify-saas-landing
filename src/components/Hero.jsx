@@ -18,7 +18,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="relative min-h-screen w-full flex flex-col items-center justify-between overflow-hidden ">
+    <div id="home" className="relative min-h-screen w-full flex flex-col items-center justify-between overflow-hidden ">
       <div
         className="absolute inset-0 bg-[url('/bg.jpg')] bg-cover bg-center   z-0"
         aria-hidden="true"
