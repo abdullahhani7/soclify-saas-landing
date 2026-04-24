@@ -10,15 +10,43 @@ import {
 
 const Hero = () => {
   const partners = [
-    { name: "Logoipsum", icon: <Globe className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
-    { name: "Learnify", icon: <Compass className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
-    { name: "Saydraw", icon: <Layers className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
-    { name: "Shopfun", icon: <Cpu className="w-4 h-4 md:w-6 sm:w-5 sm:h-5 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
-    { name: "OneTech", icon: <FingerprintPattern className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" /> },
+    {
+      name: "Logoipsum",
+      icon: (
+        <Globe className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" />
+      ),
+    },
+    {
+      name: "Learnify",
+      icon: (
+        <Compass className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" />
+      ),
+    },
+    {
+      name: "Saydraw",
+      icon: (
+        <Layers className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" />
+      ),
+    },
+    {
+      name: "Shopfun",
+      icon: (
+        <Cpu className="w-4 h-4 md:w-6 sm:w-5 sm:h-5 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" />
+      ),
+    },
+    {
+      name: "OneTech",
+      icon: (
+        <FingerprintPattern className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-9 xl:h-9" />
+      ),
+    },
   ];
 
   return (
-    <div id="home" className="relative min-h-screen w-full flex flex-col items-center justify-between overflow-hidden ">
+    <div
+      id="home"
+      className="relative min-h-screen w-full flex flex-col items-center justify-between overflow-hidden "
+    >
       <div
         className="absolute inset-0 bg-[url('/bg.jpg')] bg-cover bg-center   z-0"
         aria-hidden="true"
@@ -58,13 +86,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative z-10 w-full py-12    ">
+      <div className="hidden sm:block relative z-10 w-full py-12    ">
         <div className="container mx-auto px-6">
-          <div className="flex flex-nowrap    items-center justify-center gap-2 md:gap-7 lg:gap-20 xl:gap-32 opacity-30">
+          <div className="flex flex-nowrap    items-center justify-center gap-3 md:gap-7 lg:gap-20 xl:gap-32 opacity-30">
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300 group cursor-pointer"
+                className="flex items-center gap-3 grayscale hover:grayscale-0 transition-all duration-300 group cursor-pointer"
               >
                 <div className="text-white   transition-colors">
                   {partner.icon}
