@@ -48,7 +48,7 @@ export default function PricingSection() {
   ];
 
   return (
-    <section className="bg-[#161616] text-white py-24 px-6">
+    <section  id="pricing" className="bg-[#161616] text-white py-24 px-6">
       <div className="max-w-7xl mx-auto text-center">
         {/* Header */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-gradient-to-r from-[#272626] via-white/30 to-[#272626] border border-white/10 text-sm text-white mb-6">

@@ -54,7 +54,9 @@ export default function FooterSection() {
               <div className="w-8 h-8 bg-linear-to-bl from-emerald-500 to-emerald-900 rounded-lg flex items-center justify-center shadow-lg   transition-all">
                 <ShieldCheck />
               </div>
-              <span className="text-3xl  font-medium tracking-tight">SOClify</span>
+              <span className="text-3xl  font-medium tracking-tight">
+                SOClify
+              </span>
             </div>
             <p className="text-gray-300 text-md leading-relaxed">
               Securely is a modern cybersecurity platform designed to protect
@@ -110,9 +112,7 @@ export default function FooterSection() {
                   Los Angeles, CA 90001 <br />
                   United States
                 </p>
-                <p className="text-white    pt-2">
-                  Phone : (256) 870-8700
-                </p>
+                <p className="text-white    pt-2">Phone : (256) 870-8700</p>
               </div>
             </div>
           </div>
@@ -121,28 +121,33 @@ export default function FooterSection() {
         {/* سطر الحقوق النهائي */}
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-8">
           <p className="text-gray-300 text-sm">
-            © {currentYear} Securely. All right reserved.
+            © {currentYear} SOClify. All right reserved.
           </p>
 
           <div className="flex gap-8">
-            <a
+            <FaFacebook
+              size={22}
+              className="text-gray-300 hover:text-white transition-all transform hover:scale-110 cursor-pointer"
+            />
+
+            {/* <a
               href="#"
               className="text-gray-300 hover:text-white transition-all transform hover:scale-110"
-            >
-              <FaFacebook size={22} />
-            </a>
-            <a
+            > */}
+            <RiTwitterXLine
+              size={22}
+              className="text-gray-300 hover:text-white transition-all transform hover:scale-110 cursor-pointer"
+            />
+            {/* </a> */}
+            {/* <a
               href="#"
               className="text-gray-300 hover:text-white transition-all transform hover:scale-110"
-            >
-              <RiTwitterXLine size={22} />
-            </a>
-            <a
-              href="#"
-              className="text-gray-300 hover:text-white transition-all transform hover:scale-110"
-            >
-              <AiFillInstagram size={22} />
-            </a>
+            > */}
+            <AiFillInstagram
+              size={22}
+              className="text-gray-300 hover:text-white transition-all transform hover:scale-110 cursor-pointer"
+            />
+            {/* </a> */}
           </div>
         </div>
       </div>

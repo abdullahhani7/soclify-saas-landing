@@ -19,14 +19,14 @@ const Header = () => {
 
         {/* Links */}
         <div className="hidden md:flex items-center gap-6">
-          {["Home", "Services", "Pricing", "Company", "Blog"].map((item) => (
-            <Link
+          {["Home", "Services", "Pricing", "Company", "Contact"].map((item) => (
+            <a
               key={item}
-              href={`/${item.toLowerCase()}`}
+              href={`#${item.toLowerCase()}`}
               className="text-white  hover:text-[#22ae74] text-sm font-medium transition-all"
             >
               {item}
-            </Link>
+            </a>
           ))}
         </div>
 

@@ -36,7 +36,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="bg-[#161616] text-white py-20 px-6 md:px-12 overflow-hidden">
+    <section id="services" className="bg-[#161616] text-white py-20 px-6 md:px-12 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="flex flex-col  md:flex-row justify-between text-center md:text-start items-center  md:items-end mb-16 gap-6">

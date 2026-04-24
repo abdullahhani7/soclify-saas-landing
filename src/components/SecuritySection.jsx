@@ -30,7 +30,7 @@ export default function SecuritySection() {
   ];
 
   return (
-    <section className="relative min-h-screen w-full   py-25 px-6 overflow-hidden flex flex-col items-center">
+    <section id="company" className="relative min-h-screen w-full   py-25 px-6 overflow-hidden flex flex-col items-center">
       <div className="absolute inset-0 z-0 opacity-30">
         <Image
           src="/bg2.png"
