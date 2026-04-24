@@ -45,14 +45,14 @@ const Header = () => {
     >
       <div className="flex items-center justify-between w-full max-w-5xl px-4 py-2 bg-[#161616]/80 backdrop-blur-lg border border-white/10 rounded-lg shadow-2xl">
         {/* Logo */}
-        <div className="flex items-center gap-3 group cursor-pointer">
+        <a href="#home" className="flex items-center gap-3 group cursor-pointer">
           <div className="w-8 h-8 bg-gradient-to-bl from-emerald-500 to-emerald-900 rounded-lg flex items-center justify-center shadow-lg">
             <ShieldCheck size={20} className="text-white" />
           </div>
           <span className="text-white font-bold text-lg tracking-tight">
             SOClify
           </span>
-        </div>
+        </a>
 
         {/* Links */}
         <div className="hidden md:flex items-center gap-6">

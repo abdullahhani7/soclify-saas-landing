@@ -69,7 +69,7 @@ export default function ServicesSection() {
               </p>
             </div>
             <Image
-              src="/services1.jpeg"
+              src="/services1.png"
               alt="Cloud"
               fill
               className="object-cover object-bottom opacity-80 group-hover:scale-105 transition-transform duration-500"
@@ -86,7 +86,7 @@ export default function ServicesSection() {
               </p>
             </div>
             <Image
-              src="/services2.jpeg"
+              src="/services2.png"
               alt="Testing"
               fill
               className="object-cover object-bottom opacity-80 group-hover:scale-105 transition-transform duration-500"
