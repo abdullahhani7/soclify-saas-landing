@@ -137,10 +137,14 @@ export default function PricingSection() {
 
               {/* Price */}
               <div className="flex items-center justify-between mb-6">
-                <h4 className="text-4xl font-semibold">{plan.name}</h4>
+                <h4 className="text-2xl sm:text-4xl md:text-[23px] lg:text-4xl xl:text-4xl 2xl:text-4xl  font-semibold">
+                  {plan.name}
+                </h4>
                 <div className=" ">
-                  <span className="text-2xl font-medium">${plan.price}</span>
-                  <span className="text-gray-300 text-sm"> /month</span>
+                  <span className="text-[17px] md:text-[17px] font-medium">
+                    ${plan.price}
+                  </span>
+                  <span className="text-gray-300 text-sm md:text-[12px]"> /month</span>
                 </div>
               </div>
 
@@ -149,7 +153,7 @@ export default function PricingSection() {
               </p>
 
               {/* Features List */}
-              <ul className="space-y-5 mb-20 flex-grow">
+              <ul className="space-y-4 lg:space-y-5 mb-20 flex-grow">
                 {plan.features.map((feature, idx) => (
                   <li
                     key={idx}

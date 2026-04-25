@@ -46,14 +46,14 @@ export default function SecuritySection() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-2 py-1.5 rounded-lg  bg-linear-to-b  from-white/50 to-white/10 bg-[#161616]/50 border border-white/10 text-white text-sm mb-8 backdrop-blur-sm">
           <ShieldCheck size={18} />
-          <span>Why Choose Securely</span>
+          <span>Why Choose SOClify</span>
         </div>
 
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6 tracking-tight">
-          Security Isn&apos;t Just a Feature — It&apos;s
+          Security Isn&apos;t Just a Feature — It&apos;s 
           <br className="hidden md:block" />
-          <span className="text-gray-400">Our Foundation.</span>
+           &nbsp;<span className="text-gray-400">Our Foundation.</span>
         </h2>
 
         {/* Subtitle */}
