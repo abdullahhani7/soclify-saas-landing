@@ -1,77 +1,101 @@
 "use client";
 import { useState } from "react";
 import { Check, CircleDollarSign, ShieldCheck } from "lucide-react";
+import PricingCards from "./PricingCards";
 
 export default function PricingSection() {
-  const [isAnnual, setIsAnnual] = useState(false);
+  // const [isAnnual, setIsAnnual] = useState(false);
 
   const plans = [
     {
-      name: "Starter",
-      price: isAnnual ? "159" : "199",
-      description: "For small businesses & startups who want to start safely.",
+      name: "SIEMsation",
+      tier: "TIER 1",
+      price: "199",
+      description:
+        "Full ELK Stack deployment — the foundation of enterprise-grade visibility.",
       features: [
-        "Real-time threat monitoring",
-        "Email & endpoint protection",
-        "Basic security Dashboard",
-        "Monthly Report",
-        "Support via Email",
+        "Elasticsearch + Logstash + Kibana",
+        "Custom security dashboards",
+        "Log aggregation & indexing",
+        "Real-time alerting engine",
+        "Threat correlation rules",
+        "24/7 support",
+        "Free 1hr consultation (1/month)",
       ],
       isPopular: false,
     },
     {
-      name: "Growth",
-      price: isAnnual ? "399" : "499",
-      description: "Complete solution for growing business.",
+      name: "Autopilot",
+      tier: "TIER 2",
+      price: "499",
+      description:
+        "CEverything in SIEMsation and automated incident response, and case management.omplete solution for growing business.",
       features: [
-        "All Starter features",
-        "Cloud security & firewall protection",
-        "24/7 Response Team",
-        "Weekly security reports",
-        "Integration with your business tools",
+        " All SIEMsation features",
+
+        "File integrity monitoring (FIM)",
+        "TheHive — case management & ticketing",
+        "Shuffle SOAR — workflow automation",
+        "Automated network actions",
+        "Host isolation on detection",
+        "24/7 support",
+        "Free 1hr consultation (2/month)",
       ],
       isPopular: true,
     },
     {
-      name: "Enterprise",
-      price: isAnnual ? "719" : "899",
-      description: "Full security for large scale organizations.",
+      name: "Full Spectrum",
+      tier: "TIER 3",
+      price: "899",
+      description:
+        "The complete SOClify suite — SIEM + SOAR + EDR for total endpoint and network dominance.",
       features: [
-        "All Growth features",
-        "Custom threat response plan",
-        "Dedicated security consultant",
-        "Penetration testing & compliance support",
-        "Exclusive SLA & priority support",
+        " All Autopilot features",
+        "Elastic Defend EDR or LimaCharlie",
+        "Malware prevention & removal",
+        "Memory integrity enforcement",
+        "Ransomware protection",
+        "24/7 support",
+        "Free 1hr consultation (3/month)",
       ],
       isPopular: false,
     },
   ];
 
   return (
-    <section  id="pricing" className="bg-[#161616] text-white py-24 px-6">
+    <section id="pricing" className="bg-[#161616] text-white py-24 px-6">
       <div className="max-w-7xl mx-auto text-center">
         {/* Header */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-gradient-to-r from-[#272626] via-white/30 to-[#272626] border border-white/10 text-sm text-white mb-6">
-             <ShieldCheck size={14} />
+          <ShieldCheck size={14} />
           <span>Pricing</span>
         </div>
-        
+
         <h2 className="text-4xl md:text-5xl font-semibold mb-6 tracking-tight">
           Simple, Scalable Pricing for <br />
           <span className="text-gray-300">Serious Security</span>
         </h2>
-        
+
         <p className="text-gray-300 mb-10 max-w-lg mx-auto">
-          Choose a plan that fits your business needs —<br/> with no hidden fees.
+          Select how you want SOClify deployed —<br /> then pick your security
+          tier.
+        </p>
+        <p className="text-gray-400  font-medium  max-w-lg mx-auto">
+          {/* Step 1 — Deployment Model */}
+          STEP 1 — DEPLOYMENT MODEL
         </p>
 
+        <PricingCards />
+
         {/* Toggle Switch */}
-        <div className="flex justify-center items-center mb-16">
+        {/* <div className="flex justify-center items-center mb-16">
           <div className="bg-[#363535] p-1 rounded-lg border border-white/5 flex items-center">
             <button
               onClick={() => setIsAnnual(false)}
               className={`cursor-pointer px-6 py-2 rounded-md text-sm font-medium transition-all ${
-                !isAnnual ? "bg-linear-to-b from-white/20 to-black/40  text-white shadow-lg" : "text-gray-400 hover:text-gray-100"
+                !isAnnual
+                  ? "bg-linear-to-b from-white/20 to-black/40  text-white shadow-lg"
+                  : "text-gray-400 hover:text-gray-100"
               }`}
             >
               Monthly
@@ -79,13 +103,19 @@ export default function PricingSection() {
             <button
               onClick={() => setIsAnnual(true)}
               className={`cursor-pointer px-6 py-2 rounded-md text-sm font-medium transition-all ${
-                isAnnual ? "bg-linear-to-b from-white/20 to-black/40  text-white shadow-lg" : "text-gray-400 hover:text-gray-100"
+                isAnnual
+                  ? "bg-linear-to-b from-white/20 to-black/40  text-white shadow-lg"
+                  : "text-gray-400 hover:text-gray-100"
               }`}
             >
               Annually
             </button>
           </div>
-        </div>
+        </div> */}
+
+        <p className="text-gray-400  font-medium mb-7 max-w-lg mx-auto">
+          STEP 2 — SECURITY TIER
+        </p>
 
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -101,24 +131,30 @@ export default function PricingSection() {
               {/* Badge for Growth Plan */}
               <div className="mb-7">
                 <span className="px-3 py-1 rounded-lg  bg-gradient-to-r from-[#272626] via-white/10 to-[#272626] border border-white/10 text-xs  ">
-                  {plan.name}
+                  {plan.tier}
                 </span>
               </div>
 
               {/* Price */}
-              <div className="mb-4">
-                <span className="text-4xl font-medium">${plan.price}</span>
-                <span className="text-gray-300 text-sm"> /month</span>
+              <div className="flex items-center justify-between mb-6">
+                <h4 className="text-4xl font-semibold">{plan.name}</h4>
+                <div className=" ">
+                  <span className="text-2xl font-medium">${plan.price}</span>
+                  <span className="text-gray-300 text-sm"> /month</span>
+                </div>
               </div>
 
-              <p className="text-gray-300 text-sm mb-9 leading-relaxed max-w-2/3">
+              <p className="text-gray-300 text-sm mb-9 leading-relaxed max-w-4/5">
                 {plan.description}
               </p>
 
               {/* Features List */}
               <ul className="space-y-5 mb-20 flex-grow">
                 {plan.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-sm text-gray-300">
+                  <li
+                    key={idx}
+                    className="flex items-start gap-3 text-sm text-gray-300"
+                  >
                     <Check className="w-4 h-4 text-white shrink-0 border rounded-full " />
                     {feature}
                   </li>

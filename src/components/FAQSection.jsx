@@ -14,7 +14,7 @@ export default function FAQSection() {
         "Yes, we provide detailed monthly and real-time security reports that outline detected threats, system vulnerabilities, and the actions taken to mitigate risks.",
     },
     {
-      question: "Vulnerability vs. Pentesting?",
+      question: "Vulnerability Assessment vs. Pentesting?",
       answer:
         "Vulnerability Assessment identifies security gaps in your system. Penetration Testing (pentest) simulates a real attack to test how strong your system is against threats.",
     },

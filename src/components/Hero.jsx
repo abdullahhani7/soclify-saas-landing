@@ -58,7 +58,7 @@ const Hero = () => {
             #1
           </span>
           <span className="text-gray-200 text-sm font-semibold tracking-wider">
-            Best security service
+           Hackers Don't Sleep. Neither Do We
           </span>
         </div>
 

@@ -7,6 +7,7 @@ import {
   useMotionValueEvent,
   AnimatePresence,
 } from "framer-motion";
+import Link from "next/link";
 
 const Header = () => {
   const [hidden, setHidden] = useState(false);
@@ -57,20 +58,20 @@ const Header = () => {
         {/* Links */}
         <div className="hidden md:flex items-center gap-6">
           {["Home", "Services", "Pricing", "Company", "Contact"].map((item) => (
-            <a
+            <Link
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`/#${item.toLowerCase()}`}
               className="text-white hover:text-[#22ae74] text-sm font-medium transition-all"
             >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
 
         {/* Action Button */}
-        <button className="bg-gradient-to-b from-white/10 to-transparent hover:from-emerald-500 hover:to-emerald-900 text-white px-5 py-1.5 rounded-lg border border-white/10 text-sm font-medium transition-all active:scale-95 cursor-pointer duration-300">
+        <Link href="/get-started" className="bg-gradient-to-b from-white/10 to-transparent hover:from-emerald-500 hover:to-emerald-900 text-white px-5 py-1.5 rounded-lg border border-white/10 text-sm font-medium transition-all active:scale-95 cursor-pointer duration-300">
           Try it Now
-        </button>
+        </Link>
       </div>
     </motion.nav>
   );
