@@ -2,12 +2,14 @@
 import { useState } from "react";
 import { Check, CircleDollarSign, ShieldCheck } from "lucide-react";
 import PricingCards from "./PricingCards";
+import Link from "next/link";
 
 export default function PricingSection() {
   // const [isAnnual, setIsAnnual] = useState(false);
 
   const plans = [
     {
+      id: "tier1",
       name: "SIEMsation",
       tier: "TIER 1",
       price: "199",
@@ -25,6 +27,7 @@ export default function PricingSection() {
       isPopular: false,
     },
     {
+      id: "tier2",
       name: "Autopilot",
       tier: "TIER 2",
       price: "499",
@@ -44,6 +47,7 @@ export default function PricingSection() {
       isPopular: true,
     },
     {
+      id: "tier3",
       name: "Full Spectrum",
       tier: "TIER 3",
       price: "899",
@@ -61,6 +65,8 @@ export default function PricingSection() {
       isPopular: false,
     },
   ];
+
+  const [selectedModel, setSelectedModel] = useState("our-cloud");
 
   return (
     <section id="pricing" className="bg-[#161616] text-white py-24 px-6">
@@ -85,7 +91,10 @@ export default function PricingSection() {
           STEP 1 — DEPLOYMENT MODEL
         </p>
 
-        <PricingCards />
+        <PricingCards
+          selectedModel={selectedModel}
+          setSelectedModel={setSelectedModel}
+        />
 
         {/* Toggle Switch */}
         {/* <div className="flex justify-center items-center mb-16">
@@ -144,7 +153,9 @@ export default function PricingSection() {
                   <span className="text-[17px] md:text-[17px] font-medium">
                     ${plan.price}
                   </span>
-                  <span className="text-gray-300 text-sm md:text-[12px]"> /month</span>
+                  <span className="text-gray-300 text-sm md:text-[12px]">
+                    /month
+                  </span>
                 </div>
               </div>
 
@@ -166,7 +177,7 @@ export default function PricingSection() {
               </ul>
 
               {/* CTA Button */}
-              <button
+              {/* <button
                 className={`cursor-pointer w-full py-2 rounded-xl font-medium transition-all ${
                   plan.isPopular
                     ? "bg-emerald-700 hover:bg-emerald-600 text-white"
@@ -174,7 +185,18 @@ export default function PricingSection() {
                 }`}
               >
                 Get Started
-              </button>
+              </button> */}
+
+              <Link
+                href={`/get-started?tier=${plan.id}&model=${selectedModel}`}
+                className={`w-full py-3 rounded-xl font-bold text-center transition-all ${
+                  plan.isPopular
+                    ? "bg-emerald-500 hover:bg-emerald-400 text-black shadow-[0_0_20px_rgba(16,185,129,0.2)]"
+                    : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
+                }`}
+              >
+                Get Started
+              </Link>
             </div>
           ))}
         </div>
