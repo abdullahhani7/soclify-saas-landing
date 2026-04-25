@@ -1,5 +1,6 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const outfit = Outfit({
   variable: "--font-geist-sans",
@@ -20,7 +21,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${outfit.variable}  scroll-smooth h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        
+        {children}</body>
     </html>
   );
 }
