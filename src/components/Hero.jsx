@@ -81,9 +81,9 @@ const Hero = () => {
             <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
           </Link>
 
-          <button className="cursor-pointer text-gray-300 hover:text-white font-semibold text-lg transition-all relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-white after:transition-all">
+          <Link href="/#services" className="cursor-pointer text-gray-300 hover:text-white font-semibold text-lg transition-all relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-white after:transition-all">
             Learn More
-          </button>
+          </Link>
         </div>
       </div>
 

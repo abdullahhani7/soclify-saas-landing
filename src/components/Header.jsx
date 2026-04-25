@@ -57,7 +57,7 @@ const Header = () => {
 
         {/* Links */}
         <div className="hidden md:flex items-center gap-6">
-          {["Home", "Services", "Pricing", "Company", "Contact"].map((item) => (
+          {["Home", "Services", "Pricing", "Company" ].map((item) => (
             <Link
               key={item}
               href={`/#${item.toLowerCase()}`}
