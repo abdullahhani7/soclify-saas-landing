@@ -5,6 +5,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function FooterSection() {
   const currentYear = new Date().getFullYear();
@@ -34,13 +35,13 @@ export default function FooterSection() {
                 Securely's world-class cybersecurity system.
               </p>
 
-              <button className="cursor-pointer inline-flex items-center gap-2 bg-[#0d7653] hover:bg-[#059669] text-white px-10 py-4 rounded-xl font-bold text-lg transition-all group">
+              <Link href="/get-started" className="cursor-pointer inline-flex items-center gap-2 bg-[#0d7653] hover:bg-[#059669] text-white px-10 py-4 rounded-xl font-bold text-lg transition-all group">
                 Book a Demo
                 <ArrowUpRight
                   size={22}
                   className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
                 />
-              </button>
+              </Link>
             </motion.div>
           </div>
         </div>

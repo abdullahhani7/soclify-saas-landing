@@ -7,6 +7,7 @@ import {
   FingerprintPattern,
   ArrowUpRight,
 } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   const partners = [
@@ -75,10 +76,10 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-10">
-          <button className="group relative flex items-center gap-2 bg-linear-to-b from-[#0d7653] to-[#059669]   text-white   px-5 py-3 rounded-xl transition-all duration-300   active:scale-95 cursor-pointer">
+          <Link href="/get-started" className="group relative flex items-center gap-2 bg-linear-to-b from-[#0d7653] to-[#059669]   text-white   px-5 py-3 rounded-xl transition-all duration-300   active:scale-95 cursor-pointer">
             Book a Demo
             <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </button>
+          </Link>
 
           <button className="cursor-pointer text-gray-300 hover:text-white font-semibold text-lg transition-all relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-white after:transition-all">
             Learn More
