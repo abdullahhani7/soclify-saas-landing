@@ -75,7 +75,7 @@ export default function FooterSection() {
                   (link) => (
                     <li key={link}>
                       <a
-                        href={`#${link.toLowerCase()}`}
+                        href={`/#${link.toLowerCase()}`}
                         className="text-gray-300 hover:text-[#10b981] transition-colors"
                       >
                         {link}
