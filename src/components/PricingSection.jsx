@@ -145,11 +145,11 @@ export default function PricingSection() {
               </div>
 
               {/* Price */}
-              <div className="flex items-center justify-between mb-6">
-                <h4 className="text-2xl sm:text-4xl md:text-[23px] lg:text-4xl xl:text-4xl 2xl:text-4xl  font-semibold">
+              <div className="flex items-baseline-last justify-between mb-6">
+                <h4 className="text-3xl sm:text-4xl md:text-[23px] lg:text-4xl xl:text-4xl 2xl:text-4xl  font-semibold">
                   {plan.name}
                 </h4>
-                <div className=" ">
+                <div>
                   <span className="text-[17px] md:text-[17px] font-medium">
                     ${plan.price}
                   </span>

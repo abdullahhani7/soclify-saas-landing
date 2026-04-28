@@ -62,14 +62,14 @@ const ContactForm = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="bg-[#0d0d0d] border border-white/5 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden"
+            className=" bg-gradient-to-bl from-white/10 to-[#0f0e0e] bg-[#000000db] border border-white/5 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden"
           >
             {/* خلفية جمالية خفيفة */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 blur-[100px] -z-10" />
 
             <div className="mb-10">
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                Send us a <span className="text-emerald-500">message</span>
+              <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
+                Send us a <span className="text-emerald-400">message</span>
               </h1>
               <p className="text-gray-400">
                 We'll get back to you within 24 hours.
