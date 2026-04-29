@@ -87,7 +87,7 @@ const ContactForm = () => {
                     required
                     type="text"
                     name="fullName"
-                    placeholder="Ahmed Hassan"
+                    placeholder="John Doe"
                     value={formData.fullName}
                     onChange={handleChange}
                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/50 outline-none transition-all"
