@@ -61,7 +61,7 @@ export default function FooterSection() {
               </span>
             </div>
             <p className="text-gray-300 text-md leading-relaxed">
-              Securely is a modern cybersecurity platform designed to protect
+              SOClify is a modern cybersecurity platform designed to protect
               businesses of all sizes from digital threats.
             </p>
           </div>
